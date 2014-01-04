@@ -7,4 +7,7 @@ class SendSMS
     response = RestClient.post 'https://api.att.com/myMessages/v2/messages', {addresses: "tel:#{destination}", text: message}, headers
     response.code == 201
   end
+
+  def self.receive_messages
+  end
 end
