@@ -41,3 +41,32 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'bootstrap-sass', '>= 3.0.0.0'
+gem 'figaro'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'pg'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'hub', :require=>nil
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+end
+
+group :production do
+  gem 'thin'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner', '1.0.1'
+  gem 'email_spec'
+end
+
