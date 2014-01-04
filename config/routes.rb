@@ -5,4 +5,6 @@ IcetrailsApi::Application.routes.draw do
   get '/signin' => 'sessions#new', :as => :signin
   get '/signout' => 'sessions#destroy', :as => :signout
   get '/auth/failure' => 'sessions#failure'
+  get '/send_sms' => 'send_sms#index'
+  post '/send_sms' => 'send_sms#create'
 end

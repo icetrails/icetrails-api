@@ -1,0 +1,7 @@
+<%= form_tag do %>
+  <%= label_tag(:message, "Message to send:") %>
+  <%= text_field_tag(:message) %>
+  <%= label_tag(:destination, "Destination number:") %>
+  <%= text_field_tag(:destination) %>
+  <%= submit_tag('Send') %>
+<% end %>
