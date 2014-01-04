@@ -14,6 +14,7 @@ gem 'omniauth-facebook'
 gem 'pg'
 gem 'protected_attributes'
 gem 'rest-client'
+gem 'rails_12factor'
 
 group :development do
   gem 'better_errors'
