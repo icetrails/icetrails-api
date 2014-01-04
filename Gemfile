@@ -12,7 +12,6 @@ gem 'figaro'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'pg'
-gem 'protected_attributes'
 gem 'rest-client'
 gem 'rails_12factor'
 
@@ -21,6 +20,7 @@ group :development do
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'hub', :require=>nil
   gem 'rails_layout'
+  gem 'byebug'
 end
 group :development, :test do
   gem 'factory_girl_rails'
