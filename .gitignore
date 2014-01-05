@@ -29,6 +29,8 @@ db/*.sqlite3
 *.rbc
 *.sassc
 .rspec
+.ruby-gemset
+.ruby-version
 .redcar/
 .sass-cache
 /config/config.yml
