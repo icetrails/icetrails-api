@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140105033523) do
+ActiveRecord::Schema.define(version: 20140105075200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,16 @@ ActiveRecord::Schema.define(version: 20140105033523) do
     t.float    "long"
     t.datetime "time"
     t.integer  "event_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "messages", force: true do |t|
+    t.string   "identifier"
+    t.string   "from"
+    t.datetime "time"
+    t.string   "text"
+    t.boolean  "processed"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
