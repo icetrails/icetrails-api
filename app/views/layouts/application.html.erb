@@ -5,11 +5,12 @@
     <title><%= content_for?(:title) ? yield(:title) : "Icetrails Api" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Icetrails Api" %>">
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
+    <header class="navbar">
       <%= render 'layouts/navigation' %>
     </header>
     <main role="main">

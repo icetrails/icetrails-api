@@ -32,10 +32,12 @@ img {
   }
 // apply styles to HTML elements
 // to make views framework-neutral
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, body { font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 300; }
 main {
   @extend .container;
-  background-color: #eee;
   padding-bottom: 80px;
+  text-align: center;
+  color: #5a6565;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
   }
