@@ -48,4 +48,7 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+  if ENV['RSPEC_FOCUS'] == 'true'
+    config.filter_run_including :focus => true
+  end
 end
