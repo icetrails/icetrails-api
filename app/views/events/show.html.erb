@@ -15,5 +15,17 @@
   <%= @event.deadline %>
 </p>
 
+<p>
+	<strong>Locations:</strong>
+	<ul>
+	   <% @event.locations.each do |location| %>
+	   <li>
+	   <%= "#{location.lat}, #{location.long} at #{location.time.to_s}" %>
+       </li>
+       <% end %>
+   </ul>
+</p>
+
+
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
