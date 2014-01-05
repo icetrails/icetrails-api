@@ -10,10 +10,6 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
-    respond_to do |format|
-      format.html { render action: 'show' }
-      format.json { render json: @event.to_json(:include => :locations) }
-    end
   end
 
   # GET /events/new
